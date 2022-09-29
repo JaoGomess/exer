@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+  <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+  <!-- https://cdnjs.com/libraries/font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row-md">
+      <!--  Exercicio 4 -->
+
+      <div class="col-md-6">
+        <label>Tabuada: </label>
+        <input type="text" name="txtTabuada" id="txtTabuada" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <button onclick="calcTabuada()" class="btn btn-success">Calcular</button>
+      </div>
+      <div class="col-md-12">
+        <label>Valor final:</label>
+        <input type="text" name="tabuadaValor" id="tabuadaValor" class="form-control" disabled>
+      </div>
+
+      <hr>
+      <!--  Exercicio 5 -->
+
+      <div class="col-md-6">
+        <label>Valor 1: </label>
+        <input type="number" name="numberValor1" id="numberValor1" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label>Valor 2: </label>
+        <input type="number" name="numberValor2" id="numberValor2" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label>Operador: </label>
+        <select name="opcs" id="lista">
+          <option value="+">Adição</option>
+          <option value="-">Subtração</option>
+          <option value="*">Multiplicação</option>
+          <option value="/">Divisão</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <button onclick="calcCalculadora()" class="btn btn-success">Calcular</button>
+      </div>
+      <div class="col-md-12">
+        <label>Resultado: </label>
+        <input type="text" name="calcResult" id="calcResult" class="form-control" disabled>
+      </div>
+
+      <hr>
+      <!-- Exercico 7 -->
+
+      <div class="col-md-6">
+        <label>Custo da fabrica: </label>
+        <input type="text" name="custoFabrica" id="custoFabrica" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label>Preço do Distribuidor: </label>
+        <input type="text" name="percDistribuidor" id="percDistribuidor" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label>Custo de Impostos: </label>
+        <input type="text" name="percImpostos" id="percImpostos" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <button onclick="btncalcular()" class="btn btn-success">Calcular</button>
+      </div>
+      <div class="col-md-6">
+        <label>Valor final:</label>
+        <input type="text" name="valorfinal" id="valorfinal" class="form-control" disabled>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
